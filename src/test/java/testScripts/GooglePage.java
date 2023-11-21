@@ -10,6 +10,7 @@ public class GooglePage {
 
 	public static void main(String[] args) {
 
+		// https://github.com/NaviNaveenYadav/SeleniumWebDriverTraining.git
 		// Token - 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
 		
 		WebDriver driver = new ChromeDriver();
@@ -18,6 +19,8 @@ public class GooglePage {
 		WebElement srcBox = driver.findElement(By.id("APjFqb"));
 		srcBox.sendKeys("Java Tutorials");
 		srcBox.sendKeys(Keys.ENTER);
+		
+		System.out.println("Modification Done");
 	}
 
 }
