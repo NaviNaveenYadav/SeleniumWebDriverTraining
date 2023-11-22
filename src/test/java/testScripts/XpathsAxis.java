@@ -3,6 +3,7 @@ package testScripts;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +12,7 @@ public class XpathsAxis {
 
 	public static void main(String[] args) {
 		
-		//github token - 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
+		//github token - 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
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();		
@@ -35,6 +36,15 @@ public class XpathsAxis {
 	
 		
 		System.out.println("---------------");
+		
+		
+		driver.navigate().to("https://selectorshub.com/xpath-practice-page/");
+		
+		List<WebElement> chxBox = driver.findElements(By.xpath("(//tbody)[2]/tr/descendant::input/parent::td/following-sibling::td[starts-with(text(),'win')]/preceding-sibling::td/input"));
+		
+		for(WebElement checkBox : chxBox) {
+			checkBox.click();
+		}
 		
 		
 	}
