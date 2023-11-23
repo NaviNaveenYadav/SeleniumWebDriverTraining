@@ -15,7 +15,6 @@ import org.openqa.selenium.interactions.Actions;
 public class MouseActions {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
-		// TODO Auto-generated method stub
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();

@@ -12,7 +12,7 @@ public class XpathsAxis {
 
 	public static void main(String[] args) {
 		
-		//github token - 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
+		//github token - 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
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();		

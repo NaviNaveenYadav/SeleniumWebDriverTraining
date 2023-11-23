@@ -14,7 +14,7 @@ public class GooglePage {
 	public static void main(String[] args) {
 
 		// https://github.com/NaviNaveenYadav/SeleniumWebDriverTraining.git
-		// Token - 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
+		// Token - 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
 		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
