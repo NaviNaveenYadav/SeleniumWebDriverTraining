@@ -17,9 +17,9 @@ public class GooglePage {
 		// Token - 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
 		
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.google.com/");
-		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		driver.get("https://www.google.com/");
 		
 		WebElement srcBox = driver.findElement(By.id("APjFqb"));
 		srcBox.sendKeys("Java Tutorial");
